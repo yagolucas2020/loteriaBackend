@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -57,13 +57,13 @@
                     <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repetir Senha">
                   </div>
                 </div>
-                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                <a href="<c:url value="dashboard"/>" class="btn btn-primary btn-user btn-block">
                   Cadastrar
                 </a>
               </form>
               <hr>
               <div class="text-center">
-                <a class="small" href="login.html">Ja tem uma conta ? Login!</a>
+                <a class="small" href="<c:url value="login"/>">Ja tem uma conta ? Login!</a>
               </div>
             </div>
           </div>

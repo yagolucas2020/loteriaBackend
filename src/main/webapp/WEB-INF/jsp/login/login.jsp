@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -55,11 +55,11 @@
                         <label class="custom-control-label" for="customCheck">Remember Me</label>
                       </div>
                     </div>
-                    <a href="index.html" class="btn btn-primary btn-user btn-block">
+                    <a href="<c:url value="dashboard"/>" class="btn btn-primary btn-user btn-block">
                       Login
                     </a>
                     <hr>
-                    <a href="register.html" class="btn btn-google btn-user btn-block">
+                    <a href="<c:url value="cadastro"/>" class="btn btn-google btn-user btn-block">
                       Cadastrar
                     </a>
           
